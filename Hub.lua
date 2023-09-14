@@ -1,5 +1,5 @@
 local StarterGui = game:GetService("StarterGui")
-local Link = game:HttpGet("https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/"..game..".lua")
+local Link = game:HttpGet("https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/"..game.PlaceId..".lua")
 
 if Link then
   StarterGui:SetCore("SendNotification", {
