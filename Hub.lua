@@ -1,6 +1,11 @@
-if not game:IsLoaded() then game.Loaded:Wait() end
-    if game.PlaceId == 11827760850 then
-        https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/Pet%20Capsules%20Simulator.lua"))()
-    else
-      print("Game isn't Supported")
+local StarterGui = game:GetService("StarterGui")
+local Link = game:HttpGet("https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/"..game..".lua")
+
+if Link then
+  StarterGui:SetCore("SendNotification", {
+		Title = "ENZO-YT",
+		Text = "Welcome. Loading script.",
+		Duration = 10
+	})
+	loadstring(Link)()
 end
