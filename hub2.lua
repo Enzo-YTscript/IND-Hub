@@ -10,7 +10,7 @@ if not game:IsLoaded() then game.Loaded:Wait() end
     elseif game.PlaceId == 13891637445 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Pryxo/Hub/main/Lucky%20Block%20Legends!"))()
     elseif game.PlaceId == 15025029467 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/15025029467.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/15025029467"))()
     else
       print("Game isn't Supported")
 end
