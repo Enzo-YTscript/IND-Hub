@@ -1,12 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/setup.lua"))()
-local KeySystem = _G.KSS.classes.keysystem.new("IndoHub") -- Create class KeySystem
-local Key = KeySystem:key('key_user') -- Create class Key
-
-if Key.finish and Key:verifyHWID() then
-  print("Good")
-else
-  print("Bad")
-end
 
 if not game:IsLoaded() then game.Loaded:Wait() end
     if game.PlaceId == 12978425304 then
