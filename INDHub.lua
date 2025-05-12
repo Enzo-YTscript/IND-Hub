@@ -19,8 +19,8 @@ if not game:IsLoaded() then game.Loaded:Wait() end
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/93787311916283.lua"))() -- Horse Race
     elseif game.PlaceId == 125415045928192 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/125415045928192.lua"))() -- Roller Training
-    elseif game.PlaceId == 132495346586140 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/132495346586140.lua"))() --Swim League
+    elseif game.PlaceId == 126447951598274 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/126447951598274.lua"))() -- Swim League
     else
       print("Game isn't Supported")
 end
