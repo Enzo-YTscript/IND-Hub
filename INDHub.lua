@@ -1,4 +1,6 @@
-if not game:IsLoaded() then game.Loaded:Wait() end
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
 
 local scripts = {
     [120570155878200] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/120570155878200.lua", -- Broom Training
@@ -11,12 +13,17 @@ local scripts = {
     [92039548740735] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/92039548740735.lua", -- Underworld
     [93787311916283] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/93787311916283.lua", -- Horse Race
     [125415045928192] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/125415045928192.lua", -- Roller Training
-	[112678615086652] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/112678615086652.lua", -- Ride Race
+    [112678615086652] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/112678615086652.lua", -- Ride Race
 }
 
 local url = scripts[game.PlaceId]
 if url then
-    pcall(loadstring(game:HttpGet(url)))
+    local success, err = pcall(function()
+        loadstring(game:HttpGet(url))()
+    end)
+    if not success then
+        warn("Failed to load script: " .. err)
+    end
 else
     print("Game isn't Supported")
 end
