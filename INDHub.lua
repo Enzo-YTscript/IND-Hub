@@ -15,6 +15,7 @@ local scripts = {
     [125415045928192] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/125415045928192.lua", -- Roller Training
     [112678615086652] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/112678615086652.lua", -- Ride Race
 	[101645554076038] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/101645554076038.lua", -- Paper Plane sim
+	[106425431775947] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/106425431775947.lua", -- Motorcycle Racing
 	
 }
 
