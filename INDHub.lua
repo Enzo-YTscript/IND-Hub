@@ -18,6 +18,8 @@ local scripts = {
     [101645554076038] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/101645554076038.lua", -- Paper Plane sim
     [106425431775947] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/106425431775947.lua", -- Motorcycle Racing
     [76260928389356] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/76260928389356.lua", -- Guitar Simulator
+	[81257648942232] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/81257648942232.lua", -- Slash Mob Simulator
+	[125661369726244] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/125661369726244.lua", -- Anime Apex
 	
 }
 
