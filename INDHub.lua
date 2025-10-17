@@ -20,6 +20,7 @@ local scripts = {
     [76260928389356] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/76260928389356.lua", -- Guitar Simulator
 	[81257648942232] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/81257648942232.lua", -- Slash Mob Simulator
 	[125661369726244] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/125661369726244.lua", -- Anime Apex
+	[16713816479] = "https://raw.githubusercontent.com/Enzo-YTscript/scrp/main/16713816479.lua", -- Pet Quest
 	
 }
 
