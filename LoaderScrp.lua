@@ -1,8 +1,22 @@
-if not game:IsLoaded() then game.Loaded:Wait() end
+-- Load Rayfield if not already loaded (for notification)
+local RayfieldLoaded = pcall(function()
+    Rayfield:Notify({})
+end)
+if not RayfieldLoaded then
+    local Rayfield
+    local success, errorMsg = pcall(function()
+        Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+    end)
+    if not success then
+        warn("Failed to load Rayfield for notification: " .. tostring(errorMsg))
+    end
+end
 
-print("🔍 Checking access... PlaceId: " .. tostring(game.PlaceId))
-
+-- Check if key validation flag is set
 if not _G.KeyValidated then
+    if Rayfield then
+        Rayfield:Notify({ Title = "Access Denied", Content = "Script must be loaded through key validation system.", Duration = 30 })
+    end
     warn("Access denied: Script must be loaded through key validation system.")
     return
 end
@@ -10,9 +24,9 @@ end
 print("Loading script for PlaceId: " .. game.PlaceId)
 
 local PlaceId = game.PlaceId
--- =============================================
 
-local scripts = {
+
+local scriptMap = {
     [120570155878200] = "https://raw.githubusercontent.com/Enzo-YTscript/LoaderScrp/main/120570155878200.lua", -- Broom Training
     [13127800756] = "https://raw.githubusercontent.com/Enzo-YTscript/LoaderScrp/main/13127800756.lua",
     [11827760850] = "https://raw.githubusercontent.com/Enzo-YTscript/LoaderScrp/main/11827760850.lua",
@@ -32,8 +46,8 @@ local scripts = {
 	[125661369726244] = "https://raw.githubusercontent.com/Enzo-YTscript/LoaderScrp/main/125661369726244.lua", -- Anime Apex
 	[16713816479] = "https://raw.githubusercontent.com/Enzo-YTscript/LoaderScrp/main/16713816479.lua", -- Pet Quest
 	[73823535458649] = "https://raw.githubusercontent.com/Enzo-YTscript/LoaderScrp/main/73823535458649.lua", -- Pet Evolution Incremental
-
 }
+
 local scriptUrl = scriptMap[PlaceId]
 if scriptUrl then
     -- Load and execute the main script
@@ -41,8 +55,8 @@ if scriptUrl then
         loadstring(game:HttpGet(scriptUrl))()
     end)
     if not loadSuccess then
-        warn("✅ Script loaded: " .. tostring(loadErr))
+        warn("Failed to load main script: " .. tostring(loadErr))
     end
 else
-    warn("❌ No script for PlaceId: " .. tostring(PlaceId))
+    warn("No script found for this PlaceId: " .. tostring(PlaceId))
 end
