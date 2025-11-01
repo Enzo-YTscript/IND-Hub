@@ -33,6 +33,7 @@ local scripts = {
 	[16713816479] = "https://raw.githubusercontent.com/Enzo-YTscript/LoaderScrp/main/16713816479.lua", -- Pet Quest
 	[73823535458649] = "https://raw.githubusercontent.com/Enzo-YTscript/LoaderScrp/main/73823535458649.lua", -- Pet Evolution Incremental
 
+}
 local scriptUrl = scriptMap[PlaceId]
 if scriptUrl then
     -- Load and execute the main script
