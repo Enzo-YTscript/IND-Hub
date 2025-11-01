@@ -130,7 +130,7 @@ local function showKeyWindow()
                             }
                             writefile(KeySystemSettings.FileName, HttpService:JSONEncode(saveData))
                         end
-                        Rayfield:Notify({ Title = "✅ Success", Content = "Key validated! Loading script...", Duration = 5 })
+                        Rayfield:Notify({ Title = "Success", Content = "Key validated! Loading script...", Duration = 5 })
                         Rayfield:Destroy()  -- Updated to Rayfield:Destroy()
                         
                         -- Set global validation flag
