@@ -51,7 +51,7 @@ local function showKeyWindow()
     -- Tab Info (placeholder, isi sendiri di GitHub version-mu)
     local InfoTab = KeyWindow:CreateTab("Info")
     -- Add your own elements here, e.g.:
-    InfoTab:CreateParagraph({ Title = "ℹ️ Info", Content = "Buy key → Copy link → Paste key → Enjoy! 🎮" })
+    InfoTab:CreateParagraph({ Title = "ℹ️ Info", Content = " Copy link → Paste key → Enjoy! 🎮" })
 
     -- Tab KeyValidation
     local KeyValidationTab = KeyWindow:CreateTab("Key Validation")
