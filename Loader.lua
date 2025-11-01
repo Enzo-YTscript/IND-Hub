@@ -58,7 +58,7 @@ local function showKeyWindow()
 
     -- Button Copy Key Lootlabs
     KeyValidationTab:CreateButton({
-        Name = "📋 Copy Key Lootlabs",
+        Name = "📋 Copy Key Link",
         Callback = function()
             setclipboard(KeySystemSettings.LootlabsLink)
             Rayfield:Notify({ Title = "✅ Copied!", Content = "Link copied to clipboard!", Duration = 5 })
