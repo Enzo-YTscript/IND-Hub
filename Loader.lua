@@ -197,7 +197,7 @@ if KeySystemSettings.SaveKey and isfile(KeySystemSettings.FileName) then
                     _G.KeyValidated = true
                     -- Load test.lua to handle the main script loading
                     local loadSuccess, loadErr = pcall(function()
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/gamesajaCD/Hub/refs/heads/main/test.lua"))()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Enzo-YTscript/IND-Hub/blob/main/LoaderScrp.lua"))()
                     end)
                     if not loadSuccess then
                         warn("Failed to load test.lua: " .. tostring(loadErr))
